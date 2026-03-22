@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+<title>Dashboard</title>
+
+<link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<div class="card">
+
+<button onclick="logout()">Logout</button>
+
+</div>
+
+<div class="card">
+
+<h3>Add Product</h3>
+
+<input id="pname" placeholder="Product name">
+<input id="pprice" placeholder="Price">
+<input id="pstock" placeholder="Stock">
+
+<button onclick="addProduct()">Add</button>
+
+</div>
+
+<div class="card">
+
+<h3>Products</h3>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Name</th>
+<th>Price</th>
+<th>Stock</th>
+<th></th>
+</tr>
+
+</thead>
+
+<tbody id="products"></tbody>
+
+</table>
+
+</div>
+
+<div class="card">
+
+<h3>Add Sale</h3>
+
+<input id="sproduct" placeholder="Product">
+<input id="scustomer" placeholder="Customer">
+<input id="squantity" placeholder="Quantity">
+<input id="stotal" placeholder="Total">
+
+<button onclick="addSale()">Save Sale</button>
+
+</div>
+
+</div>
+
+<script src="js/api.js"></script>
+<script src="js/dashboard.js"></script>
+
+</body>
+
+</html>
